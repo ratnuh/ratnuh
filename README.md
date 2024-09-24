@@ -1,0 +1,4 @@
+- 👋 Hi, I’m @ratnuh
+- 👀 I’m interested in cybersecurity and ethical hacking
+- 🌱 I’m currently learning Cybersecurity and AWS Practice
+- 📫 Reach me here or on linkedin
