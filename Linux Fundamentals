@@ -1,1 +1,14 @@
+This page will cover my knowledge surrounding Linux as a beginner and things I have learned from TryHackMe
+----------------------------------------------------------------------------------------------------------
+Given I had no experience within the OS, it was nice to see some silly commands such as:
+Echo- repeats text given following the command
+whoami- tells you your user (actually useful in pentesting)
 
+Commands I commonly use, help navigate what can seem a daunting endless list of code.
+
+| Command    |                                            |
+|------------|--------------------------------------------|
+| ls         | List files available in current directory  |
+| cd         | followed by directory will change your pwd |
+| cat        | Reads file within the command box          |
+| pwd        | Tells you your "present working directory" |
