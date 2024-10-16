@@ -6,9 +6,13 @@ whoami- tells you your user (actually useful in pentesting)
 
 Commands I commonly use, help navigate what can seem a daunting endless list of code.
 
-| Command    |                                            |
-|------------|--------------------------------------------|
-| ls         | List files available in current directory  |
-| cd         | followed by directory will change your pwd |
-| cat        | Reads file within the command box          |
-| pwd        | Tells you your "present working directory" |
+| Command    |                                               |
+|------------|-----------------------------------------------|
+|    ls      | List files available in current directory     |
+|    cd      | followed by directory will change your pwd    |
+|    cat     | Reads file within the command box             |
+|    pwd     | Tells you your "present working directory"    |
+|    find    | Finds specific in your directory (find psd.md)|
+|    wc      | Counts the number of files matching(wc psd.md)|
+|    grep    | Searches file for given name (grep 123 psd.md)|
+
