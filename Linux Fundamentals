@@ -15,4 +15,26 @@ Commands I commonly use, help navigate what can seem a daunting endless list of 
 |    find    | Finds specific in your directory (find psd.md)|
 |    wc      | Counts the number of files matching(wc psd.md)|
 |    grep    | Searches file for given name (grep 123 psd.md)|
+|    su      | Elevates all future commands as root          |
 
+Shell Operators 
+| Command    |                                               |
+|------------|-----------------------------------------------|
+|    &       | Runs operation as a background process        |
+|    &&      | Makes a list of commands run                  |
+|    >       | Directs your output (grep > output.txt)       |
+|    >>      | Overwrites content of file (If already exist) |
+
+The following section will follow common commands used in conjunction with others.
+
+| Command argument|                                          |
+|-----------------|------------------------------------------|-------------|
+|    -a   | Used to signify all (ls -a : List all)                         |
+| --help  | Used in almost any context (-h too) to list available commands |
+|   -R    | Remove file used in context (file.txt -R)                      |
+
+Next ill go over the final bits of what I was taught and some general utilities that are helpful in almost every scenario.
+
+Text Editors: there is a few different text editors, one being nano; my personal favorite. The other being VIM.
+Nano: accessed by typing (nano) and can also be followed by a the title of what you want to title the document.
+Nano also has its own set of commands
