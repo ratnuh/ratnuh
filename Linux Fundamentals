@@ -65,3 +65,45 @@ ________________________________________________________________________________
 | file                    100%[=================================================>]  49.90K  --.-KB/s    in 0.04s
 |
 | 2021-05-04 14:26:16 (1.31 MB/s) - ‘file’ saved [51095/51095]
+
+_Remember_ : this is meant to be used within a SEPARATE OS
+
+This next section will follow processes, something I didnt truly understand my first try through so
+this will be good for me and you to cover.
+|__Commands___________________________________________________________________________________________
+|   ps    | List currently running processes
+|  aux    | Used as a command argument to list processes also ran by other uses
+|  top    | Gives real time stats about the processes running
+|  kill   | As you imagine "kills" or stops a process 
+|systemctl| Allows you to interact with certain system processes
+| ctrl+z  | Backgrounds a process (also can use & as mentioned earlier)
+|  fg     | Brings a backgrounded process to the "fore ground"
+
+| systemctl |___________________________________________________________________________________________
+|  start    | Forces a process to resume its normal process
+|  stop     | Kills a process without taking the time to ensure its safely ended
+|  kill     | Kills a process cleanly, with less risk of damaging associated files
+|  enable   | Starts a process normally
+|  disable  | Stops a process without killing it allowing you to resume the same process later
+
+The rest of the section will lightly touch on some commonly used systme functions.
+
+Cron (Processes and their scheduled run times)
+When used in context of a command, the command (crontabs) will be used to interact with said processes)
+|  Crontab  |____________________________________________________________________________________________
+|   MIN     |  What minute to execute at
+|   HOUR    |  What hour to execute at
+|   DOM	    |  What day of the month to execute at
+|   MON	    |  What month of the year to execute at
+|   DOW	    |  What day of the week to execute at
+|   CMD	    |  The actual command that will be executed.
+|   -e      |  Crontab argumment to be used to edit given cronjobs (process)
+|   -R      |  Displays when given cronjob will be processed 
+|   *       |  When used with setting a cronjobs start time/date an (*) can be used to signal a "wildcard" which will run randomly
+
+Finally, any process can be accessed via a directory and using the (ls) command can show given logs for when each process was ran.
+These logs will give you insight into those jobs beinng accessed and errors within them.
+
+Now that we've gone over many basics within linux, lets move onto windows just to touch on every OS 
+we will use for future captures and further learning.
+
