@@ -37,4 +37,31 @@ Next ill go over the final bits of what I was taught and some general utilities 
 
 Text Editors: there is a few different text editors, one being nano; my personal favorite. The other being VIM.
 Nano: accessed by typing (nano) and can also be followed by a the title of what you want to title the document.
-Nano also has its own set of commands
+Nano also has its own set of commands listed here :
+^G Get Help    ^O Write Out   ^W Where Is    ^K Cut Text    ^J Justify     ^C Cur Pos     M-U Undo       M-A Mark Text
+^X Exit        ^R Read File   ^\ Replace     ^U Paste Text  ^T To Spell    ^_ Go To Line  M-E Redo       M-6 Copy Text
+
+One of the most useful tools being used in many instances during my time in school uses python3.
+Sending files to and from OS is a hassle especially on a OS such as linux, unless using a http server.
+Launching your VM/Linux OS and using command http.server (followed by a port # if you like),
+then using another OS (besides windows) the command wget is used to retrive files given a url. 
+
+Lets give an example
+______________________________________________________________________________________________
+| tryhackme@linux3:/webserver# python3 -m http.server
+| Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+| ____________________________________________________________________________________________
+
+(Other OS)
+_______________________________________________________________________________________________
+| tryhackme@linux4:/webserver# wget http://MACHINE_IP:8000/myfile
+| 
+| 2021-05-04 14:26:16  http://127.0.0.1:8000/file
+| Connecting to http://127.0.0.1:8000... connected.
+| HTTP request sent, awaiting response... 200 OK
+| Length: 51095 (50K) [text]
+| Saving to: ‘file’
+|
+| file                    100%[=================================================>]  49.90K  --.-KB/s    in 0.04s
+|
+| 2021-05-04 14:26:16 (1.31 MB/s) - ‘file’ saved [51095/51095]
