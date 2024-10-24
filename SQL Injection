@@ -1,0 +1,10 @@
+Breifly; SQL (Structured Query Language) Injection; is a type of malciious command execution caused by maalicious queries on a website.
+This is common when communication goes unfettered between a server and a unverified user. While attacking web applications in such way is old, it is also the most damaging.
+
+To explain for SQL injection works, we'll touch on some basic terms and systems relevant to SQL.
+
+_Database_
+  A electronic storage unit, controlled by a  Database Management System (DBMS). There are two types of databases; relational and non-relational. 
+I've focused on relational databases for my future examples; common ones you'll come across are MySQL, Microsoft SQL Server, Access, PostgreSQL and SQLite.
+Databases store info for a multitude of operations, for an example; a store. This stores customer information is stored in things called tables, which is read by said database.
+![alt text](https://tryhackme-images.s3.amazonaws.com/user-uploads/5efe36fb68daf465530ca761/room-content/f31d5855476c01e8359df000da4ac79d.png)
