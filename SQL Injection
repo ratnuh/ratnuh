@@ -7,4 +7,45 @@ _Database_
   A electronic storage unit, controlled by a  Database Management System (DBMS). There are two types of databases; relational and non-relational. 
 I've focused on relational databases for my future examples; common ones you'll come across are MySQL, Microsoft SQL Server, Access, PostgreSQL and SQLite.
 Databases store info for a multitude of operations, for an example; a store. This stores customer information is stored in things called tables, which is read by said database.
-![alt text](https://tryhackme-images.s3.amazonaws.com/user-uploads/5efe36fb68daf465530ca761/room-content/f31d5855476c01e8359df000da4ac79d.png)
+
+_Tables_
+  Information store in templates consisting of rows and columns, or a grid if you'd prefer. Within columns (or fields), most commonly stored are intergers, strings or dates.
+They are also used to store more complex data such as locations. Ensuring your data type helps keep the information consistent and useful for future users. 
+They also commonly have a automatic scaling due to their use for intergers, creating a key field, which must be unique to find every row in a table.
+
+_Rows_
+  Simply used in conjunction with the columns to organize the correlating data.
+
+__Relational vs Non-Relational Database__
+  Relational databases often use the same data, and have unique IDs that often correlate with said tables that share said data. This allows them to reference each
+other and make information more accessible to other databases.
+  Non-Relational databases, AKA NoSQL, are any other database that dont use standard tables to store their data. This allows the tables created to have rows that 
+do not have organized information. This makes a non-relational database more flexible. 
+
+SQL Commands/Query Language___
+
+SELECT: Used to retreive data from tables.
+To be used like such:   Select * from Users; 
+Select being our command, * signifying to pull all the data, and Users being the data set to pull from; also the semicolon (;) used to end said query.
+
+Instead of using *, you could also specify what data to pull. Using to direct command of (Select username,password from users;), where our command is select; we are pulling from 
+the columns username and password; and again from our table of users.
+
+When using * to SELECT all data, a argument can be added to you query, LIMIT is used to say how many rows of data you wish to pull. I.E.   Select *  from users LIMIT5;
+  Also to be more specific you can use =; to be used as   SELECT * from users='admin'
+On the opposite, != is used when you wish to exclude the specific value youve given your query.   SELECT * from users !='admin'
+  Using the last two arguments in conjunction with queries like "or" and also "and"; can guide your search for multiple terms while keeping it specfici. i.e.
+SELECT * from users !='admin' and/or 'john'
+  Using the clause LIKE allows you to search terms close to any given value while paired with %. In context;     select * from users where username like 'a%';   Which chooses any user
+name, that would start with a.
+  This is also used within any part of said value (in example) a%, %min, %mi%, all various searches for the user admin.
+
+UNION: Combines data retreived from multiple SELECT queries. 
+  SELECT name,address,city,postcode from customers UNION SELECT company,address,city,postcode from suppliers;
+
+INSERT: Inserts a new row of data into a table, using "into users" for example would INSERT given value into the users row.
+  insert into users (username,password) values ('bob','password123');
+This would INSERT 
+
+
+
