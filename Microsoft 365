@@ -1,0 +1,47 @@
+In this topic I'd like to cover cloud concepts and how Microsoft 365 allows you to implement 
+structured security regulations built into the Microsoft 365 system.
+This will also cover pricing and support, and the overiew of public, private, and hybrid clouds; 
+and their on-premise and cloud based data solutions.
+
+The cloud is a relatively new concept, popularized in the 2000s. Everyone knows what a cloud means "data stored eslwhere"
+but when you drill down and what it is, its not common knowledge.
+  1. Networking, acessing files on a server
+  2. Using the internet to connect to said server
+  3. Services 
+
+Services____
+-Data, store in the server or database
+-Networking, again data stored on a database but within a LAN or WAN
+-Applications, accessed virtually, using said data
+-VMs (Virtual Machines), fully operational computers running an OS apart from your own
+-Analytics, allows you to analyze information store about the information being used on your server
+
+Cloud types____
+-Public, space purchased on servers to share information within a company
+-Private, a dedicated server for a single organization to use with no pre set apps
+-Hybrid, combination of the first two, holding some services on cloud and some on dedicated
+
+Now we have a basic understanding of the topics discussed, we'll start to understand the applications offerede
+within Microsoft 365 and how to impliment their measures into our cloud system.
+
+Windows 10 Enterprise Tools____
+  -Windows Defender Advanced Threat Protection: A simple virus protection service that works to pre-emptively
+negate and defend users from viruses, BEFORE they affect a operating system. This is automated, cloud enabled,
+and always updates automatically. This includes Application control for addmins, application guard to avoid malware,
+and credentials guard to allow admins to control user access.
+  -Windows update tool: Desktop analytics for device health, offers 30 month support for september releases.
+Additionally offers a Long term systm channel, that ensure no changes in functionality over time.
+  -Windows 10 etnerprise Management: INcludes virtual desktop, accessed on azure servers allowing users to access
+their desktops at any time. User experience manager allows admins to change users application access and feature access.
+Finally, cloud activation allows user to upgrade to new versions of windows.
+  -UE-V or User Enviroment Virtualization allows windows to store user preferences and create a smoother experience'
+when using different desktops and the same user settings.
+  -Application virtualization (App-v) allows admins to provide virtualized win32 apps to users to allow backward compatibility.
+
+Microsoft Fastrack____
+Allows enterprises to seamlessly move your dedicated system and servers to cloud using the Fastrack website and application.
+  This also offers training for you and your users to smoothly move their information to a new databse, and support while doing it.
+Signing in on behlaf of your organization will allow you to register for FastTrack. A success plan offered by FastTrack gives you  
+
+
+
