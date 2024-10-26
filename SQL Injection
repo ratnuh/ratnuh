@@ -45,7 +45,29 @@ UNION: Combines data retreived from multiple SELECT queries.
 
 INSERT: Inserts a new row of data into a table, using "into users" for example would INSERT given value into the users row.
   insert into users (username,password) values ('bob','password123');
-This would INSERT 
+This would INSERT the values of bob and password123 into a table holding that information.
+
+UPDATE: As you can assume updates the information in the given table value with new information you give it.
+  update users SET username='root',password='pass123' where username='admin';
+This would update the information stored in the use value under the username admin, to be replaced with root, and pass word with password123.
+
+DELETE: Delete is a simple comman just allowing you to remove a given set of information.
+  -delete from users where username= martin';    This would remove martin from the list of usernames.
+  -delete from users;     Would remove all infor from the users table becuause of the unspecified value. 
+
+Practical use:
+
+Lets say we have a website; https://website.thm/blog?id=1
+  The web application needs to retrieve a article, and this URL refers to it with "id=1", while referred to in the URL, our SQL statement is going to
+  look something like:
+    SELECT * from blog where id=1 and private=0 LIMIT 1;
+  Where the article id is still referred to as 1, and we chose private=0; as it is assumed shared knowledge that the value 0 for private means "public"
+  And alongside that, it is also assumed knowledge that artical id=2 is set to private=1, where it cannot be viewed.
+  "https://website.thm/blog?id=2;--" is now the URL we wish to use as "--" is a value in SQL given to make a comment for devs.
+    This would mean that anything after id=2 is a comment, and then: SELECT * from blog where id=2;-- and private=0 LIMIT 1;
+    would negate the private parameter set on the articles is.
+
+
 
 
 
