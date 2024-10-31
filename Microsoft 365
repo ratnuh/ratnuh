@@ -9,14 +9,14 @@ but when you drill down and what it is, its not common knowledge.
   2. Using the internet to connect to said server
   3. Services 
 
-Services____
+Services
 -Data, store in the server or database
 -Networking, again data stored on a database but within a LAN or WAN
 -Applications, accessed virtually, using said data
 -VMs (Virtual Machines), fully operational computers running an OS apart from your own
 -Analytics, allows you to analyze information store about the information being used on your server
 
-Cloud types____
+Cloud types
 -Public, space purchased on servers to share information within a company
 -Private, a dedicated server for a single organization to use with no pre set apps
 -Hybrid, combination of the first two, holding some services on cloud and some on dedicated
