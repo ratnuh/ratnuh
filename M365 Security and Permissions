@@ -22,7 +22,7 @@ Cloud types
 -Hybrid, combination of the first two, holding some services on cloud and some on dedicated
 
 
-Windows 10 Enterprise Tools____
+Windows 10 Enterprise Tools
   -Windows Defender Advanced Threat Protection: A simple virus protection service that works to pre-emptively
 negate and defend users from viruses, BEFORE they affect a operating system. This is automated, cloud enabled,
 and always updates automatically. This includes Application control for addmins, application guard to avoid malware,
@@ -123,6 +123,21 @@ Set Up Version Control:
 Enable version history in the document library to keep track of changes made to project documents.
 Customize Navigation:
 Adjust the site navigation for easy access to key sections, like “Documents,” “Tasks,” and “Calendar.”
+
+And finally, this can all be accessed with a plan and the pricing guide will be as follows:
+Here’s an overview of Microsoft 365 pricing, including approximate costs (note that prices may vary based on region and promotions):
+ Individual Plans:
+- **Microsoft 365 Personal:** ~$69.99/year or ~$6.99/month
+- **Microsoft 365 Family:** ~$99.99/year or ~$9.99/month (up to 6 users)
+
+ Business Plans:
+- **Microsoft 365 Business Basic:** ~$6.00/user/month (annual commitment)
+- **Microsoft 365 Business Standard:** ~$12.50/user/month (annual commitment)
+- **Microsoft 365 Business Premium:** ~$22.00/user/month (annual commitment)
+
+ Enterprise Plans:
+- **Microsoft 365 E3:** ~$36.00/user/month (annual commitment)
+- **Microsoft 365 E5:** ~$57.00/user/month (annual commitment)
 
 I hope this has been a good example of the basic understanding of how to use Microsoft 365 to change user access and overall security;
 with lmited practical use, in my little time using M365 and testing security measures via powershell, I have picked up a wide range 
