@@ -21,8 +21,6 @@ Cloud types____
 -Private, a dedicated server for a single organization to use with no pre set apps
 -Hybrid, combination of the first two, holding some services on cloud and some on dedicated
 
-Now we have a basic understanding of the topics discussed, we'll start to understand the applications offerede
-within Microsoft 365 and how to impliment their measures into our cloud system.
 
 Windows 10 Enterprise Tools____
   -Windows Defender Advanced Threat Protection: A simple virus protection service that works to pre-emptively
@@ -38,10 +36,53 @@ Finally, cloud activation allows user to upgrade to new versions of windows.
 when using different desktops and the same user settings.
   -Application virtualization (App-v) allows admins to provide virtualized win32 apps to users to allow backward compatibility.
 
-Microsoft Fastrack____
-Allows enterprises to seamlessly move your dedicated system and servers to cloud using the Fastrack website and application.
-  This also offers training for you and your users to smoothly move their information to a new databse, and support while doing it.
-Signing in on behlaf of your organization will allow you to register for FastTrack. A success plan offered by FastTrack gives you  
+Now we have a basic understanding of the topics discussed, we'll start to understand the applications offerede
+within Microsoft 365 and how to impliment their measures into our cloud system.
 
+Scenario:
+Your team is working on a project, and you want specific people to have access to the project documents in a SharePoint library. 
+You need to:
+Add permissions for new team members to view and edit the documents.
+Remove permissions from team members who are no longer part of the project.
 
+Adding Permissions for New Users
 
+Go to the Document Library:
+Sign into the Microsoft 365 admin portal and navigate to SharePoint.
+Find and open the specific document library where you want to manage permissions.
+Open Library Settings:
+In the document library, click on the “Settings” gear icon in the top-right corner.
+Select “Library settings.”
+Manage Access:
+In the library settings, go to “Permissions for this document library.”
+Click on “Grant Access” or “Invite people,” and enter the email addresses of the users you want to add.
+Set Permission Level:
+Assign the desired permissions: “Read” (view only) or “Edit” (view and edit).
+Click “Share” or “Send,” depending on your SharePoint version.
+
+Removing Permissions for existing users:
+Go to Permissions:
+Return to the document library settings, as before.
+Select “Permissions for this document library.”
+Find the User to Remove:
+In the permissions list, locate the user whose access you want to revoke.
+Select the checkbox next to their name.
+Remove Permissions:
+Click on “Remove User Permissions.”
+Confirm the action, and the user will no longer have access to the document library.
+
+Alternatively, it is possible to do this via powershell:
+
+For larger organizations or bulk updates, PowerShell can streamline the process:
+
+Open PowerShell and connect to SharePoint Online:
+powershell
+Connect-SPOService -Url https://yourdomain-admin.sharepoint.com
+
+Grant Access to multiple users (replace placeholders with actual data):
+powershell
+Set-SPOUser -Site https://yourdomain.sharepoint.com/sites/YourSiteName -LoginName user@example.com -IsSiteCollectionAdmin $true
+
+Revoke Access for multiple users:
+powershell
+Remove-SPOUser -Site https://yourdomain.sharepoint.com/sites/YourSiteName -LoginName user@example.com
