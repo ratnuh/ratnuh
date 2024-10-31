@@ -72,17 +72,59 @@ Click on “Remove User Permissions.”
 Confirm the action, and the user will no longer have access to the document library.
 
 Alternatively, it is possible to do this via powershell:
-
-For larger organizations or bulk updates, PowerShell can streamline the process:
-
 Open PowerShell and connect to SharePoint Online:
-powershell
 Connect-SPOService -Url https://yourdomain-admin.sharepoint.com
 
 Grant Access to multiple users (replace placeholders with actual data):
-powershell
 Set-SPOUser -Site https://yourdomain.sharepoint.com/sites/YourSiteName -LoginName user@example.com -IsSiteCollectionAdmin $true
 
 Revoke Access for multiple users:
-powershell
 Remove-SPOUser -Site https://yourdomain.sharepoint.com/sites/YourSiteName -LoginName user@example.com
+(Code writeen with asssitance of AI, basic code known, in depth code not remembered)
+
+To be more brief permissions can be managed in a multitude of ways, including Autopilot; which was developed for
+more IT admins to control devices on a network.
+Set Up Autopilot:
+Ensure you have a Microsoft 365 or Windows 10/11 Business or Enterprise subscription.
+Register your devices with Autopilot. You can do this via the Microsoft Endpoint Manager admin center or by importing device information from a CSV file.
+Configure Profiles:
+Create and configure deployment profiles in the Microsoft Endpoint Manager. These profiles define the user experience, device settings, and enrollment methods.
+Assign Profiles:
+Assign the created profiles to the registered devices. This tells Autopilot which settings to apply during the setup process.
+Prepare Devices:
+Ensure the devices are reset to factory settings before deployment. This allows them to recognize and apply the Autopilot settings.
+User Experience:
+When a user powers on the device, it connects to the internet, checks in with Autopilot, and applies the assigned profile automatically. The user then signs in with their work or school account.
+Manage Devices:
+After deployment, use the Microsoft Endpoint Manager to manage and monitor the devices, apply policies, and push updates as needed.
+
+Microsoft Sharepoint is a way to manage all the resources that are available to your users, Sharepoint allows you to group documents, websites, and integrates these 
+into other microsoft services in real time. This is also shared between multiple administrators and can be edited collaborated on.
+Create a Team Site:
+
+Go to SharePoint and select “Create site.”
+Choose “Team site” to set up a collaborative space for your project.
+Set Up the Homepage:
+Customize the homepage by adding a title and a brief description of the project.
+Use web parts to display important information:
+Text web part for project goals and updates.
+Document library web part for easy access to project files.
+Calendar web part to highlight important deadlines and meetings.
+Add Team Members:
+Go to “Site permissions” and invite team members to join the site.
+Assign appropriate roles (e.g., owner, member) based on their responsibilities.
+Create Lists for Task Management:
+Use the “List” feature to create a task list where team members can track progress.
+Include columns for task description, assigned to, due date, and status.
+Integrate Microsoft 365 Tools:
+Add links to Microsoft Teams for chat and meetings.
+Integrate Planner for detailed task management.
+Set Up Version Control:
+Enable version history in the document library to keep track of changes made to project documents.
+Customize Navigation:
+Adjust the site navigation for easy access to key sections, like “Documents,” “Tasks,” and “Calendar.”
+
+I hope this has been a good example of the basic understanding of how to use Microsoft 365 to change user access and overall security;
+with lmited practical use, in my little time using M365 and testing security measures via powershell, I have picked up a wide range 
+of Microsoft 365 services. 
+
