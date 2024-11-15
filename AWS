@@ -1,0 +1,32 @@
+In this write-up I will be covering things I have learned in my studies and during me getting my certification for AWS.
+While this is mostly notes, I will also show some practical examples of things like cloud architecture and IAM security measures.
+
+What is cloud computing?
+  - Cloud computing is a on demand service delivering IT services; eliminating the need to own, store, and maintain physical systems such as databases and servers
+      This is offered on a as-needed basis directly from AWS or other similar cloud providers.
+  - AWS is the worlds leading and most comprehensive cloud adopted across the world. Offering 200 services in data centers globally. 
+
+Advantages to Cloud Computing__
+ - Variable expense, pay for what you use and not what you predict you need.
+ - Benefits from economy of scale, economy of scale refers to the lower variable cost for users, based on how many people are hosted in the cloud through AWS.
+ - As said before, theres no need to predcit usage and cost. Using things such as the price calculator helps determine cost before service is obtained.
+ - Because of services being held in the cloud, they become isntanly accessible.
+ - Because of the cloud storing your systems, they become available in any region; in minutes.
+
+Cloud Networks are hosted in three different forms: Cloud, On-Premise (Private Cloud), or Hybrid (a mix of the two)
+Cloud networks like AWS offer a global infrastructure, these are split into regions. Within each region, availability zones; these allow for you to have
+redundancy in your systems and help negate faults. They also scale easily and can copy and spread into the other zones and regions.
+
+Security and Compliance___
+  - In cloud security, there is a shared responsibility model. Certain responsibilities are held by Amazon and some are held by the user/administrator.
+  - Users control the services they choose to impliment, giving permissions and abilities to users accessing their service.
+  - Amazon controls the cloud, protection from DDOS attacks and certain backend attacks youd expect on databases and servers.
+  - AWS offers you guides and expertise to help you navigate issues. They offer hundreds of tools to help you meet security objectives.
+ Compliance
+  - AWS is beholden to certain laws and regulations implimented by the government, for example:
+ • SOC 1/ISAE 3402, SOC 2, SOC 3
+ • FISMA, DIACAP, and FedRAMP
+ • PCI DSS Level 1
+ • ISO 9001, ISO 27001, ISO 27017, ISO 27018
+
+AWS Services___
