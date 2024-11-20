@@ -3,3 +3,5 @@ This file will include screenshots and layout for AWS Cloud Formations I have bu
 Security and IAM example____________________________________________
 
 Goal: Create 3 groups for 3 users, giving them EC2 admin, EC2 support, and S3 support roles.
+![Alt text](images/Screenshot 2024-11-19 195217.png?raw=true)
+
